@@ -37,6 +37,21 @@ body {
     line-height: normal;
     font-style: normal;
 }
+.gtranslate_wrapper {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+.gtranslate_wrapper::after {
+    content: "";
+    display: block;
+    margin-left: 20px;
+    height: 50px;
+    width: 1px;
+    background-color: #ccc;
+}
+
 .main-content {
     width: 1170px;
     max-width: calc(100% - 48px);
@@ -128,7 +143,11 @@ a {
     background: var(--primary-color);
     color: #fff;
 }
-
+.header .cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* Hero */
 .hero {
     padding: 30px 20px 79px;
